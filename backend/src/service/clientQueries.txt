@@ -1,0 +1,76 @@
+---------------------------------
+ query getAllUsers{
+  users{
+    _id
+    firstName
+    lastName
+    email
+    password
+    
+  }
+}
+
+---------------------------------
+query getAllQuotes {
+  quotes{
+    name
+    by
+  }
+}
+
+
+---------------------------------
+query getAllUsers{
+  users{
+    _id
+    firstName
+    lastName
+    email
+    password
+    quotes{
+      name
+      by
+    }
+    
+  }
+}
+
+----------------------------
+
+query getUserById{
+  user(_id:23131){
+    _id
+    firstName
+    lastName
+    email
+    quotes{
+      name
+      by
+    }
+    
+  }
+}
+
+------------------------------------------------------
+query getQuoteByUserID {
+  userQuote(by:4232){
+    name
+    by
+  }
+}
+
+----------------------------------------------------
+
+query getQuoteByUserID($userId :ID!) {
+  userQuote(by: $userId){
+    name
+    by
+  }
+}
+
+        *****************       
+{
+  "userId": 23131
+  
+}
+

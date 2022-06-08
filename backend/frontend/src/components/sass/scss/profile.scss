@@ -1,0 +1,128 @@
+.profile_content {
+  margin: 0;
+  padding: 0;
+  margin: 1rem;
+  background-color: $primayColor;
+  border-radius: 1rem;
+  border-radius: 1rem;
+  & img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.profile_Section__imageDiv {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 1rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10%;
+    border-radius: 1rem;
+  }
+}
+
+.profile_Section__ContentDiv {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileSection_ContentDiv__RowDiv {
+  border-radius: 1rem;
+  display: flex;
+  margin-bottom: 5px;
+  padding: 5%;
+  width: 90%;
+  box-sizing: border-box;
+  color: $whiteColor;
+  & :nth-child(1) {
+    width: 30%;
+    word-break: break-all;
+  }
+  & :nth-child(2) {
+    width: 70%;
+    word-break: break-all;
+  }
+}
+.userProfile_Quote_section {
+  width: '100vw-2rem';
+  margin: 1rem;
+}
+.userProfile_Quote_section__maindiv {
+  background-color: $primayColor;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: $whiteColor;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile_content {
+    height: 80vh;
+    display: flex;
+    column-gap: 2.5%;
+  }
+
+  .profile_Section__imageDiv {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+
+    border-radius: 1rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 10%;
+      border-radius: 1rem;
+    }
+  }
+  .profile_Section__ContentDiv {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileSection_ContentDiv__RowDiv {
+    border-radius: 1rem;
+    display: flex;
+    margin-bottom: 5px;
+    padding: 5%;
+    width: 90%;
+    box-sizing: border-box;
+    color: $whiteColor;
+    & :nth-child(1) {
+      width: 30%;
+      word-break: break-all;
+    }
+    & :nth-child(2) {
+      width: 70%;
+      word-break: break-all;
+    }
+  }
+
+  .hoverDiv:hover {
+    background-color: $thirdColor;
+  }
+
+  .userProfile_Quote_section {
+    width: '100vw-20rem';
+    margin: 2rem 10rem;
+  }
+}

@@ -1,0 +1,23 @@
+.homeSection {
+  width: "100vw-2rem";
+  margin: 1rem;
+}
+
+.homeSection_maindiv {
+  background-color: $primayColor;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: $whiteColor;
+}
+
+.homeSection_maindiv span {
+  float: right;
+  padding: 0rem 0.2rem;
+}
+@media only screen and (min-width: 768px) {
+  .homeSection {
+    width: "100vw-20rem";
+    margin: 2rem 10rem;
+  }
+}

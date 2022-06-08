@@ -1,0 +1,26 @@
+.navbar_nav {
+  display: flex;
+  // justify-content: center;
+  text-align: center;
+  overflow: scroll;
+  margin: 1rem;
+  padding: 0;
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#logoutButton {
+  background-color: $secondColor;
+}
+
+@media only screen and (min-width: 590px) {
+  .navbar_nav {
+    justify-content: center;
+  }
+}

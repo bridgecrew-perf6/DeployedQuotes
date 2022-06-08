@@ -1,0 +1,32 @@
+@import "../variables/variables";
+.register_Section {
+  padding: 2rem 0;
+  width: "100vw-10%";
+  max-height: 100vh;
+  // min-height: 70vh;
+  display: grid;
+  place-items: center;
+  margin: 5%;
+  background-color: $primayColor;
+  border-radius: 10px;
+
+  box-sizing: content-box;
+}
+.register_Form__ButtonDiv {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.register_EndDiv {
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .register_Section {
+    width: "100vw-60%";
+    margin: 5% 30%;
+    padding: 5rem 0;
+  }
+}
